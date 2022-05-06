@@ -1,16 +1,16 @@
 {% set name = "krtc" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/slaclab/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: b715b07881316842c359d2377222c476f5e24d77b194b7eeaeb6e741a1204d95
+  url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: 951485e1457630829318e13330513b1428f858e5cb9508997a3be2f70686c567
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   noarch: python
 
@@ -20,7 +20,6 @@ requirements:
     - pip
   run:
     - python >=3.5
-    - pip
     - pykerberos
 
 test:
@@ -28,8 +27,8 @@ test:
     - krtc
 
 about:
-  home: https://github.com/slaclab/krtc
-  dev_url: https://github.com/slaclab/krtc
+  home: https://github.com/pcdshub/krtc
+  dev_url: https://github.com/pcdshub/krtc
   summary: 'A small utility for using Kerberos authentication with requests'
   license: MIT
   license_family: MIT
@@ -38,5 +37,6 @@ about:
 extra:
   recipe-maintainers:
     - klauer
+    - tangkong
     - zllentz
     - zrylettc
