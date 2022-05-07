@@ -1,5 +1,5 @@
 {% set name = "krtc" %}
-{% set version = "0.1.5" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 951485e1457630829318e13330513b1428f858e5cb9508997a3be2f70686c567
+  sha256: 01a9bf7ad330abae6a5d9f3b40ee972ddeb6c991bea604ddd47235b59b377ea6
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
@@ -29,7 +29,7 @@ test:
 about:
   home: https://github.com/pcdshub/krtc
   dev_url: https://github.com/pcdshub/krtc
-  summary: 'A small utility for using Kerberos authentication with requests'
+  summary: A small utility for using Kerberos authentication with requests
   license: MIT
   license_family: MIT
   license_file: LICENSE
