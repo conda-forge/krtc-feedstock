@@ -1,5 +1,5 @@
 {% set name = "krtc" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 01a9bf7ad330abae6a5d9f3b40ee972ddeb6c991bea604ddd47235b59b377ea6
+  sha256: 4d95cf5f1704d1da1713d2d4cebedaa19cb129e84e1f6be1e5d22c2366c7dc81
 
 build:
   number: 0
