@@ -1,11 +1,11 @@
-About krtc
-==========
+About krtc-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/krtc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pcdshub/krtc
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/krtc-feedstock/blob/main/LICENSE.txt)
 
 Summary: A small utility for using Kerberos authentication with requests
 
