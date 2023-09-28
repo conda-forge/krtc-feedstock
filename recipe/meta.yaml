@@ -1,5 +1,5 @@
 {% set name = "krtc" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4d95cf5f1704d1da1713d2d4cebedaa19cb129e84e1f6be1e5d22c2366c7dc81
+  sha256: ea1d76b6396d89f43c2d1e28d5bcab85dae8e33367ef9400286fbf7fe3639cf3
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.9
     - pykerberos
+    - requests
 
 test:
   imports:
