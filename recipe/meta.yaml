@@ -10,21 +10,23 @@ source:
   sha256: ea1d76b6396d89f43c2d1e28d5bcab85dae8e33367ef9400286fbf7fe3639cf3
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pykerberos
     - requests
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - krtc
 
